@@ -43,6 +43,7 @@ h2,h3{
 
 .header-content {
     position: relative;
+    margin-top:65px;
     z-index: 2;
 }
 
