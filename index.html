@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <meta name="keywords" content="teretana u beogradu, najbolja teretana, planovi ishrane, planovi treninga"/>
     <meta name="description" content="Premium Gym je najbolja teretana u Beogradu" />
     <title>Premium Gym</title>
@@ -61,7 +62,57 @@
                 <h2 class="text-center mb-4">O nama</h2>
                 <p class="text-center">Naša teretana je posvećena vašem zdravlju i fitnesu. Pružamo personalizovane trening programe,
                     savete za ishranu i podršku za postizanje vaših fitnes ciljeva.</p>
-                <img src="images/pocetna2.jpg" class="img-fluid mx-auto d-block mt-3" alt="Treninzi"/>
+
+                <div id="trainerCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#trainerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#trainerCarousel" data-slide-to="1"></li>
+                        <li data-target="#trainerCarousel" data-slide-to="2"></li>
+                        <li data-target="#trainerCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- Trainer 1 -->
+                        <div class="carousel-item active our-team">
+                            <img src="images/trener1.jpg" class="d-block w-100" alt="Trener"/>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-orange">Jovan</h4>
+                                <p>Trener</p>
+                            </div>
+                        </div>
+                        <!-- Trainer 2 -->
+                        <div class="carousel-item our-team">
+                            <img src="images/trener2.jpg" class="d-block w-100" alt="Trener"/>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-orange">Nikola</h4>
+                                <p>Trener</p>
+                            </div>
+                        </div>
+                        <!-- Trainer 3 -->
+                        <div class="carousel-item our-team">
+                            <img src="images/ztrener.jpg" class="d-block w-100" alt="Trener"/>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-orange">Ana</h4>
+                                <p>Trener</p>
+                            </div>
+                        </div>
+                        <!-- Nutricionista -->
+                        <div class="carousel-item our-team">
+                            <img src="images/nutricionista.webp" class="d-block w-100" alt="Nutricionista"/>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-orange">Strahinja</h4>
+                                <p>Nutricionista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#trainerCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Prethodni</span>
+                    </a>
+                    <a class="carousel-control-next" href="#trainerCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Sledeći</span>
+                    </a>
+                </div>
                 
                 <h2 class="mt-5 text-center mb-4">Neke vezbe</h2>
                 <div class="row">
@@ -79,19 +130,19 @@
                     </div>
                 </div>
 
-                <h2 class="mt-5 text-center mb-4">Ishrana</h2>
+                <h2 class="mt-5 text-center mb-4">Recepti</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <img src="images/ishrana1.webp" class="slicice mb-3 mx-auto d-block" alt="Savet 1"/>
-                        <p class="text-center">Savet za ishranu 1</p>
+                        <p class="text-center">Zdrav dorucak</p>
                     </div>
                     <div class="col-md-4">
                         <img src="images/ishrana2.webp" class="slicice mb-3 mx-auto d-block" alt="Savet 2"/>
-                        <p class="text-center">Savet za ishranu 2</p>
+                        <p class="text-center">Zdrava vecera</p>
                     </div>
                     <div class="col-md-4">
                         <img src="images/ishrana3.webp" class="slicice mb-3 mx-auto d-block" alt="Savet 3"/>
-                        <p class="text-center">Savet za ishranu 3</p>
+                        <p class="text-center">Proteinski sejk sa bananom</p>
                     </div>
                 </div>
     
@@ -170,16 +221,42 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
-            <h4 class="text-orange">Šta nudimo?</h4>
-            <ul class="list-unstyled">
-                <li>Personalizovani treninzi</li>
-                <li>Saveti za ishranu</li>
-                <li>Grupni treninzi</li>
-                <li>Specijalne ponude za članove</li>
-            </ul>
-            <p class="text-orange">&copy; 2024 Premium Gym</p>
+            <div class="row">
+                <!-- Sta nudimo -->
+                <div class="col-md-4">
+                    <h5 class="text-orange">Šta nudimo?</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="trener.html">Personalizovani treninzi</a>
+                        </li>
+                        <li>
+                            <a href="ishrana.html">Saveti za ishranu</a>
+                        </li>
+                        <li>
+                            <a href="trener.html">Grupni treninzi</a>
+                        </li>
+                        <li>
+                            <a href="#">Specijalne ponude za članove</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Kontakt informacije -->
+                <div class="col-md-4">
+                    <h5 class="text-orange">Kontakt</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@premiumgym.com</li>
+                        <li>Telefon: +381 11 123 456</li>
+                        <li>Adresa: Beograd, Srbija</li>
+                    </ul>
+                </div>
+                <!-- Kako nas pronaći -->
+                <div class="col-md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.4897211630635!2d20.457274315480066!3d44.786568785023015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7098517c915b%3A0x1f230a5f5d5908ef!2sBelgrade%2C%20Serbia!5e0!3m2!1sen!2srs!4v1648259611012!5m2!1sen!2srs" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <p class="text-orange mt-3">&copy; 2024 Premium Gym</p>
         </div>
     </footer>
 
