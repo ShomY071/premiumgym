@@ -1,3 +1,10 @@
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(255, 140, 0, 1) !important;
+    border-color: rgba(255, 140, 0, 0.5) !important; 
+    outline: none !important; 
+    resize: none !important;
+}
+
 .header-bg {
     position: relative;
     background-image: url('../images/cover.jpg');
@@ -38,7 +45,7 @@
 }
 
 .btn-orange:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.5) !important;
 }
 
 .card-tr {
@@ -46,6 +53,58 @@
 }
 
 .card-tr:hover {
-    transform: scale(1.05); /* Povećava karticu za 5% na hover */
-    box-shadow: 0 4px 8px rgba(227, 102, 0, 0.1); /* Dodaje senku */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(255, 140, 0, 0.1);
+}
+
+.carousel-item {
+    height: 300px; 
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.slicice{
+    object-fit: cover; 
+    height: 200px;     
+    width: 90%;      
+}
+.statinfo{
+    background-image: url('../images/grupna.jpg'); 
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+.statinfo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* zatamnjenje pozadine */
+    z-index: 1;
+}
+.statinfo p{
+    color: white;
+    z-index: 2;
+    position: relative;   
+}
+.statinfo h3{
+    color:#FF8C00;
+    z-index: 2;
+    position: relative;  
+}
+.navbar-custom{
+    background-color: black !important;
+}
+.korisnici{
+    width: 100px;
+    
 }
