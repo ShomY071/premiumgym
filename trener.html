@@ -2,13 +2,13 @@
 <html lang="sr">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <meta name="keywords" content="cene trenera u beogradu, cene licnog trenera, cene treninga u grupi"/>
     <meta name="description" content="Premium Gym cene trenera" />
     <title>Premium Gym</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -43,7 +43,6 @@
             </ul>
         </div>
     </nav>
-    <!-- Trainer Section -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
@@ -58,14 +57,14 @@
                     <div class="card-body">
                         <h3 class="card-title">Personalni trener</h3>
                         <p class="card-text">Napredujte bolje i brže, prilagođeni trening planovi samo za vas.</p>
-                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 5000 din/mesec</p>
+                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 5000 din /mesec</p>
                         <h4 class="card-title mt-4">Benefiti</h4>
                         <ul class="list-unstyled">
                             <li>Individualni pristup</li>
                             <li>Prilagođeni planovi</li>
                             <li>Veći fokus na ciljeve</li>
                         </ul>
-                        <button class="btn btn-primary mt-3 btn-orange">Izaberite</button>
+                        <button class="btn btn-primary mt-3 btn-orange" data-toggle="modal" data-target="#izaberiModal">Izaberite</button>
                     </div>
                 </div>
             </div>
@@ -75,14 +74,14 @@
                     <div class="card-body">
                         <h3 class="card-title">Grupni trener 4</h3>
                         <p class="card-text">Vežbajte sa prijateljima i postignite ciljeve zajedno.</p>
-                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 3000 din/mesec</p>
+                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 3000 din /mesec</p>
                         <h4 class="card-title mt-4">Benefiti</h4>
                         <ul class="list-unstyled">
                             <li>Timski duh</li>
                             <li>Zabavniji trening</li>
                             <li>Do 4 osobe u grupi</li>
                         </ul>
-                        <button class="btn btn-primary mt-3 btn-orange">Izaberite</button>
+                        <button class="btn btn-primary mt-3 btn-orange" data-toggle="modal" data-target="#izaberiModal">Izaberite</button>
                     </div>
                 </div>
             </div>
@@ -92,14 +91,14 @@
                     <div class="card-body">
                         <h3 class="card-title">Grupni trener 2</h3>
                         <p class="card-text">Intenzivni treninzi sa personalnim pristupom.</p>
-                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 4000 din</p>
+                        <p class="card-text" style="font-size: 24px; font-weight: bold;">Cena: 4000 din /mesec</p>
                         <h4 class="card-title mt-4">Benefiti</h4>
                         <ul class="list-unstyled">
                             <li>Više pažnje od trenera</li>
                             <li>Prilagođeni planovi</li>
                             <li>Do 2 osobe u grupi</li>
                         </ul>
-                        <button class="btn btn-primary mt-3 btn-orange">Izaberite</button>
+                        <button class="btn btn-primary mt-3 btn-orange" data-toggle="modal" data-target="#izaberiModal">Izaberite</button>
                     </div>
                 </div>
             </div>
@@ -176,8 +175,29 @@
             <p class="text-orange">&copy; 2024 Premium Gym</p>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="izaberiModal" tabindex="-1" aria-labelledby="izaberiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="izaberiModalLabel">Izaberite trening</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Da li ste sigurni da želite da izaberete ovaj trening?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                    <button type="button" class="btn btn-primary btn-orange">Potvrdi</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>

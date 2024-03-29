@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="keywords" content="premium gym autor, stranica o autoru, premium gym author"/>
-    <meta name="description" content="Premium Gym stranica o autoru" />
-    <title>Autor</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <meta name="keywords" content="teretana u beogradu, najbolja teretana, planovi ishrane, planovi treninga"/>
+    <meta name="description" content="Premium Gym je najbolja teretana u Beogradu" />
+    <title>Kontakt - Premium Gym</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://kit.fontawesome.com/e1a78c429e.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-orange" href="index.html">Premium Gym</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,7 +24,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">    
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Početna</a>
                 </li>
                 <li class="nav-item">
@@ -35,27 +36,39 @@
                 <li class="nav-item">
                     <a class="nav-link" href="clanarina.html">Članarina</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link text-orange" href="autor.html">Autor</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <a class="nav-link" href="autor.html">Autor</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-orange" href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Autor Section -->
+    <!-- Kontakt Section -->
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4 offset-md-4 text-center">
-                <img src="images/autor.jpg" alt="Moja slika" class="img-fluid img-thumbnail mb-4"/>
-                <h3>Miloš Dešić</h3>
-                <p><i class="fas fa-id-card"></i>Broj indeksa: 243/23</p>
-                <p><i class="fab fa-instagram"></i>Instagram: <a href="https://www.instagram.com/desiccc/" target="_blank">@desiccc</a></p>
-                <p><i class="fas fa-phone"></i>Broj telefona: +381 55 333 555</p>
-                <p><i class="fas fa-envelope"></i> Email: milos.desic.243.23@ict.edu.rs</p>
-                <p><i class="fas fa-info-circle"></i>Nesto o meni: 👋 moje ime je Miloš i imam 21 godinu, bavim se web development-om i sajt koji trenutno gledas je radjen u bootstrapu. Student sam na Visokoj ICT Skoli u Beogradu.</p>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="images/contact-img.jpg" alt="Kontakt slika" class="img-fluid my-4"/>
+            </div>
+            <div class="col-md-6">
+                <h2>Kontaktirajte nas</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="ime">Ime:</label>
+                        <input type="text" class="form-control" id="ime" name="ime" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email adresa:</label>
+                        <input type="email" class="form-control" id="email" name="email" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="poruka">Poruka:</label>
+                        <textarea class="form-control" id="poruka" name="poruka" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-orange">Pošalji</button>
+                </form>
             </div>
         </div>
     </div>
