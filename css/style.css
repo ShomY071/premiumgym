@@ -115,8 +115,14 @@ h2,h3{
     z-index: 2;
     position: relative;  
 }
-.navbar-custom{
-    background-color: black !important;
+.navbar-nav .nav-link{
+    font-size: 20px !important;
+}
+.fixed-top{
+    top: 0; 
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
 }
 .korisnici{
     width: 100px;
@@ -163,6 +169,14 @@ footer ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
 }
-.our-team h5,p {
+.our-team h4,p {
     z-index: 2; 
+}
+@media screen and (max-width: 768px) {
+    .ishrana-form{
+        margin-bottom: 20px;
+    }
+    .card{
+        margin-bottom:8px;
+    }
 }
